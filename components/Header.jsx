@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-const A = styled.a`
+const CustomTagA = styled.span`
   margin-right: 1rem;
 `;
 
@@ -9,10 +9,10 @@ const Header = () => {
   return (
     <div>
       <Link href="/">
-        <A>홈</A>
+        <CustomTagA>홈</CustomTagA>
       </Link>
       <Link href="/board">
-        <A>게시판</A>
+        <CustomTagA>게시판</CustomTagA>
       </Link>
     </div>
   );

@@ -5,7 +5,7 @@ import axios from "axios";
 
 const Index = props => {
   const dataList = props.data.map(({ show }) => (
-    <li key={show.id}>
+    <li className="list-group-item" key={show.id}>
       <Link as={`/p/${show.id}`} href={`/post?title=${show.title}`}>
         <a>{show.name}</a>
       </Link>
@@ -17,7 +17,7 @@ const Index = props => {
         <p>Hello, Next JS</p>
         <h2>홈페이지</h2>
         <h3>영화 목록</h3>
-        <ul>{dataList}</ul>
+        <ul className="list-group">{dataList}</ul>
       </div>
     </Layout>
   );
