@@ -15,6 +15,9 @@ const Index = props => {
     <Layout>
       <div>
         <p>Hello, Next JS</p>
+        <Link href="https://github.com/Holy-h/nextjs_project">
+          <a target="_blank">github 페이지</a>
+        </Link>
         <h2>홈페이지</h2>
         <h3>영화 목록</h3>
         <ul className="list-group">{dataList}</ul>
